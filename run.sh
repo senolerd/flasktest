@@ -1,4 +1,5 @@
 python3 -m venv venv
 source venv/bin/activate
+pip3 install -r requirements.txt
 FLASK_APP=app
-flask run
+flask run --host 0.0.0.0:5000
