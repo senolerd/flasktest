@@ -6,7 +6,7 @@ pipeline {
         stage('testing') {
             agent {label "test-server"}
             steps {
-                sh 'echo $(date) >> /tmp/jlog.txt '
+                sh './run'
             }
         }
         
