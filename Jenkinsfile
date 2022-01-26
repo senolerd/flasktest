@@ -20,7 +20,7 @@ pipeline {
     post {
         
         always { echo "Alays run." }
-        success { echo "Run when success," }
+        success { sh "./run.sh" }
         failure { echo "RUN when failure." }
     }
 }
