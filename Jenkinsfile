@@ -10,12 +10,12 @@ pipeline {
             }
         }
         
-        stage('deploying') {
-            agent {label "prod-server"}
-            steps {
-                sh 'echo $(date) >> /tmp/jlog.txt '
-            }
-        }
+//         stage('deploying') {
+//             agent {label "prod-server"}
+//             steps {
+//                 sh 'echo $(date) >> /tmp/jlog.txt '
+//             }
+//         }
     }
     post {
         
