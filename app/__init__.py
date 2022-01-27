@@ -5,4 +5,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "test app index"
+    return "test app index 2"
