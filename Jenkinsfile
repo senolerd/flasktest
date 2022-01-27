@@ -6,7 +6,7 @@ pipeline {
         stage('testing') {
             agent {label "test-server"}
             steps {
-                sh './run.sh'
+                sh 'docker build -t myapp:latest .'
             }
         }
         
