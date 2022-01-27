@@ -6,6 +6,7 @@ pipeline {
         stage('testing') {
             agent {label "test-server"}
             steps {
+                sh 'docker rm $(docker ps -aq) -f'
                 sh 'docker build -t myapp:latest .'
                 sh 'docker run -dit -p 8000:5000 -v $PWD:/www myapp'
             }
